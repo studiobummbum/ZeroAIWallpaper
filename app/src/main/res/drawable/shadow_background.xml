@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Màu nền trắng -->
+            <corners android:radius="10dp" /> <!-- Độ cong 4 góc, bạn có thể điều chỉnh giá trị "10dp" theo ý muốn -->
+        </shape>
+    </item>
+    <item android:right="1dp" android:left="1dp" android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#DDDDDD" /> <!-- Màu đổ bóng -->
+            <corners android:radius="10dp" /> <!-- Độ cong 4 góc, phải giống với hình nền màu trắng -->
+        </shape>
+    </item>
+</layer-list>

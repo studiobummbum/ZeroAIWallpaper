@@ -1,5 +1,6 @@
 package com.zeroai.wallperhd;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -137,6 +138,17 @@ public class HomeFragment extends Fragment {
 
             // Thêm ImageView vào CardView
             cardView.addView(imageView);
+
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Xử lý khi người dùng ấn vào hình ảnh
+                    // Ở đây, bạn có thể truyền dữ liệu của hình ảnh (imageUrl) qua WallpaperDetailsActivity
+                    Intent intent = new Intent(requireContext(), WallpaperDetailsActivity.class);
+                    intent.putExtra("image_url", imageUrl);
+                    startActivity(intent);
+                }
+            });
 
             // Thêm CardView vào layout cha (layoutContainer)
             layoutContainer.addView(cardView);

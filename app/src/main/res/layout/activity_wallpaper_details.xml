@@ -1,0 +1,104 @@
+<!-- res/layout/activity_wallpaper_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/image_view_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+    <FrameLayout
+        android:background="@drawable/shadow_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+        <ImageButton
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_back"
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <FrameLayout
+            android:background="@drawable/shadow_background"
+            android:layout_margin="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageButton
+                android:background="@drawable/ic_info_wallpaper"
+                android:layout_gravity="center"
+                android:id="@+id/btn_info"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                 />
+<!--            <TextView-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_gravity="bottom|center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Info"/>-->
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/shadow_background"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:background="@drawable/ic_download_wallapaper"
+                android:id="@+id/btn_save"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                 />
+<!--            <TextView-->
+<!--                android:layout_marginBottom="2dp"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_gravity="bottom|center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Download"/>-->
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/shadow_background"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:background="@drawable/ic_apply_wallpaper"
+                android:id="@+id/btn_apply"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+<!--            <TextView-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_gravity="bottom|center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Apply"/>-->
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>
