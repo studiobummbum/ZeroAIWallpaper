@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_container" type="id" />
+    <item name="namePopularWallpaper" type="id" />
+    <item name="horizontal_scroll" type="id" />
+    <item name="horizontal_scroll_container" type="id" />
+    <item name="text_category" type="id" />
+    <item name="category_scrollview" type="id" />
+    <item name="category_container" type="id" />
+</resources>

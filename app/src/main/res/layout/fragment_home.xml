@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Thanh tìm kiếm -->
+    <EditText
+        android:textColorHint="@color/lightGray"
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/search_background"
+        android:drawableEnd="@drawable/ic_search"
+        android:hint="@string/search_hint"
+        android:padding="16dp" />
+
+    <!-- Text "Best of the month" -->
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
+        android:text="Best of the month"
+        android:id="@+id/namePopularWallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"/>
+
+    <!-- Best of the month section -->
+    <HorizontalScrollView
+        android:layout_marginTop="5dp"
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namePopularWallpaper"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/horizontal_scroll_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Individual items would be added here programmatically -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_scroll"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Caterogy"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <!-- Categories section -->
+    <ScrollView
+        android:id="@+id/category_scrollview"
+        android:layout_below="@id/text_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/category_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3">
+            <!-- Các mục danh mục sẽ được thêm vào đây -->
+        </GridLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

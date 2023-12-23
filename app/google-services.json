@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585535253684",
+    "project_id": "zeroaiwallpaper",
+    "storage_bucket": "zeroaiwallpaper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585535253684:android:68fa0ea19f952228ffbbe1",
+        "android_client_info": {
+          "package_name": "com.zeroai.wallperhd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM8e-W9QZ-Vj6cG_4s-QXILLEF66Z07tU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

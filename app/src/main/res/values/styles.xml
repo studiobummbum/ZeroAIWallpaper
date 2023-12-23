@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationViewTheme" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <!-- Define item text color -->
+        <item name="itemTextColor">@color/black</item>
+        <!-- Define item icon color -->
+        <item name="itemIconTint">@color/black</item>
+    </style>
+
+</resources>

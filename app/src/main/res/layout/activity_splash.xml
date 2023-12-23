@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper4k_nobutton_noborder">
+
+    <!-- Invisible View to act as an anchor at the center of the parent -->
+    <View
+        android:id="@+id/centerAnchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <!-- Text "Zero Wallpaper" -->
+    <TextView
+        android:id="@+id/textViewZeroWallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerAnchor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Zero Wallpaper"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <!-- Text "The place where the most beautiful AI photos are gathered" -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The place where the most beautiful AI photos are gathered"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewZeroWallpaper"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColor="#000000" />
+
+    <!-- ProgressBar at the bottom -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/colorBlue"
+        android:indeterminateTint="@color/colorBlue" />
+
+    <!-- Get Started Button -->
+    <Button
+        android:layout_marginBottom="50dp"
+        android:id="@+id/buttonGetStarted"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#9A9A9A"
+        android:visibility="gone" /> <!-- Initially hidden -->
+
+</RelativeLayout>

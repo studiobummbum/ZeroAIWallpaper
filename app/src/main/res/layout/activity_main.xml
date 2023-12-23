@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E8E8E8">
+
+
+    <!-- Thanh tìm kiếm -->
+<!--    <EditText-->
+<!--        android:textColorHint="@color/lightGray"-->
+<!--        android:id="@+id/search_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="14dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="14dp"-->
+<!--        android:layout_marginBottom="14dp"-->
+<!--        android:background="@drawable/search_background"-->
+<!--        android:drawableEnd="@drawable/ic_search"-->
+<!--        android:hint="@string/search_hint"-->
+<!--        android:padding="16dp" />-->
+<!--    <TextView-->
+<!--        android:textStyle="bold|italic"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:text="Best of the month"-->
+<!--        android:id="@+id/namePopularWallpaper"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/search_bar"/>-->
+
+<!--    &lt;!&ndash; Best of the month section &ndash;&gt;-->
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontal_scroll"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/namePopularWallpaper"-->
+<!--        android:padding="8dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            &lt;!&ndash; Individual items would be added here programmatically &ndash;&gt;-->
+<!--        </LinearLayout>-->
+<!--    </HorizontalScrollView>-->
+
+    <!-- Color tone selection -->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/color_tone_section"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/horizontal_scroll"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="8dp">-->
+
+<!--        &lt;!&ndash; Dynamic color squares would be added here &ndash;&gt;-->
+<!--    </LinearLayout>-->
+
+    <!-- Categories section -->
+<!--    <GridView-->
+<!--        android:id="@+id/categories_grid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/horizontal_scroll"-->
+<!--        android:numColumns="2"-->
+<!--        android:verticalSpacing="8dp"-->
+<!--        android:horizontalSpacing="8dp"-->
+<!--        android:padding="8dp"/>-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_home"-->
+<!--        android:background="?attr/selectableItemBackground"-->
+<!--        android:contentDescription="@null" />-->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"/>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
+        style="@style/BottomNavigationViewTheme" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_width">160dp</dimen>
+    <dimen name="image_height">250dp</dimen>
+    <dimen name="margin_between_images">12dp</dimen>
+    <dimen name="image_corner_radius">16dp</dimen>
+    <dimen name="margin_between_categories">10dp</dimen>
+</resources>

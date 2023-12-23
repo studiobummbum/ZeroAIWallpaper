@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ai Wallpaper</string>
+    <string name="title_home">Home</string>
+    <string name="title_download">Download</string>
+    <string name="title_profile">Profile</string>
+    <string name="search_hint">Find Wallpaper</string>
+</resources>
